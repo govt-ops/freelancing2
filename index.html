@@ -1,100 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freelancer Portfolio Demo</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; }
-    
-    /* Full background image for hero */
-    header {
-      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-      color:white;
-      padding: 120px 20px 100px 20px;
-      text-align:center;
-      position: relative;
-    }
-    /* Overlay for better text readability */
-    header::before {
-      content: "";
-      position: absolute;
-      top:0; left:0; width:100%; height:100%;
-      background-color: rgba(0,0,0,0.5);
-      z-index:1;
-    }
-    header h1, header p, header a {
-      position: relative;
-      z-index:2;
-    }
-    header h1 { margin:0; font-size:2.5em; }
-    header p { font-size:1.2em; margin:10px 0; }
-    header a { display:inline-block; margin:10px; padding:12px 25px; background:#ffffffcc; color:#4CAF50; text-decoration:none; border-radius:5px; font-weight:bold; }
-
-    section { padding:50px 20px; max-width:900px; margin:auto; }
-    section h2 { text-align:center; margin-bottom:30px; color:#4CAF50; }
-    .features { display:flex; flex-wrap:wrap; justify-content:space-around; gap:20px; }
-    .feature { flex:1 1 250px; border:1px solid #ddd; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); background-color:#f9f9f9; }
-    .feature ul { list-style:none; padding:0; }
-    .feature ul li { margin:10px 0; }
-    .cta { text-align:center; margin-top:30px; }
-    .cta a { display:inline-block; margin:10px; padding:12px 25px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px; font-weight:bold; }
-    footer { text-align:center; padding:20px; background:#eee; }
-    @media(max-width:600px){ .features { flex-direction:column; } }
-
-    /* Map placeholder */
-    .map { width:100%; height:300px; background:#ddd; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.2em; color:#555; }
-
-    /* Contact buttons */
-    .contact-buttons a { margin:10px; padding:12px 25px; border-radius:5px; text-decoration:none; font-weight:bold; display:inline-block; }
-    .phone { background-color:#2196F3; color:white; }
-    .messenger { background-color:#0084FF; color:white; }
-    .whatsapp { background-color:#25D366; color:white; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelancer Portfolio - Home</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; color:#333; }
+header { background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; color:white; padding:120px 20px 100px 20px; text-align:center; position: relative; }
+header::before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); z-index:1; }
+header h1, header p, header a { position: relative; z-index:2; }
+header h1 { font-size:2.5em; }
+header p { font-size:1.2em; margin:10px 0; }
+header a { display:inline-block; margin:10px; padding:12px 25px; background:#ffffffcc; color:#4CAF50; text-decoration:none; border-radius:5px; font-weight:bold; }
+nav { text-align:center; background:#f4f4f4; padding:10px 0; }
+nav a { margin:0 15px; text-decoration:none; color:#4CAF50; font-weight:bold; }
+section { padding:50px 20px; max-width:900px; margin:auto; text-align:center; }
+.cta a { display:inline-block; margin:10px; padding:12px 25px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px; font-weight:bold; }
+footer { text-align:center; padding:20px; background:#eee; }
+</style>
 </head>
 <body>
 
 <header>
   <h1>Freelancer Portfolio Demo</h1>
   <p>Professional online portfolio to showcase your skills and attract clients</p>
-  <a href="#cta">Request Free Demo</a>
-  <a href="#cta">Message Me</a>
+  <a href="about.html">Learn More</a>
+  <a href="portfolio.html">See Portfolio</a>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>This is a sample freelancer portfolio. Add your photo, bio, skills, and services here.</p>
-</section>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+</nav>
 
 <section>
-  <h2>My Services</h2>
-  <div class="features">
-    <div class="feature">
-      <ul>
-        <li>Web Design / Development</li>
-        <li>Graphic Design</li>
-        <li>Video Editing</li>
-        <li>Virtual Assistance</li>
-        <li>Writing & Content Creation</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Portfolio Samples</h2>
-  <p>Showcase 3–5 sample projects or images here to demonstrate your work.</p>
-</section>
-
-<section id="cta" class="cta">
   <h2>Get Your Free Portfolio Demo</h2>
-  <p>Let me create a professional online portfolio for you. You only pay if you like it.</p>
+  <p>Let me create a professional online portfolio for you. Only pay if you like it.</p>
   <a href="mailto:your@email.com">Request Free Demo</a>
   <a href="https://m.me/YourFacebookPage">Message Me</a>
 </section>
 
 <footer>
-  <p>&copy; 2025 Your Name | Freelancer Portfolio Demo</p>
+<p>&copy; 2025 Your Name | Freelancer Portfolio Demo</p>
 </footer>
 
 </body>
